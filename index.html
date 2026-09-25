@@ -30,6 +30,10 @@ header h1{font-family:var(--display);font-weight:300;font-size:clamp(2.1rem,8vw,
 .data{font-size:.78rem;letter-spacing:.26em;color:var(--ink-soft);padding-left:.26em}
 .luogo{font-family:var(--display);font-style:italic;font-size:1.15rem;color:var(--ink-soft);margin-top:6px}
 .intro{max-width:460px;margin:26px auto 0;font-size:.98rem;color:var(--ink-soft)}
+/* intestazione con foto */
+header.con-foto{background:linear-gradient(rgba(30,24,18,.42),rgba(30,24,18,.64)),url("foto/copertina.jpg") center 35%/cover no-repeat;color:#fff;padding:92px 20px 70px;border-bottom:0;text-shadow:0 1px 12px rgba(0,0,0,.35)}
+header.con-foto .data,header.con-foto .luogo,header.con-foto .intro{color:rgba(255,255,255,.92)}
+header.con-foto .mark{color:#E9D3A6}
 
 .zona{max-width:960px;margin:0 auto;padding:34px 20px}
 .drop{border:1px dashed var(--accent);border-radius:var(--radius);background:var(--accent-soft);padding:34px 22px;text-align:center;transition:background .25s,border-color .25s}
@@ -73,7 +77,7 @@ footer .meta{font-size:.74rem;letter-spacing:.18em;color:var(--ink-soft);margin-
 
 <div class="avviso">Pagina di esempio. <b>Le foto che caricate restano solo sul vostro telefono</b> e spariscono ricaricando.</div>
 
-<header>
+<header class="con-foto">
   <h1>Giulia &amp; Matteo</h1>
   <span class="mark">✦</span>
   <div class="data">12 · 06 · 2027</div>
